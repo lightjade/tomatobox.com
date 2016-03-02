@@ -126,7 +126,6 @@ Game Objects, Components, Prefabs, Physics and Scripting.
 	- Static Collider
 		- Scene에서 움직이지 않는 부분들.
 		- 충돌체(Collider)는 있으나 리지드바디(Rigidbody)가 없는 게임오브젝트(GameObject).
-		- 
 	- Box Collider 사용은 Static?
 	- Rigidbody 사용하면 Dynamic?
 	- Rigidbody 추가하면 Gravity에 주의
