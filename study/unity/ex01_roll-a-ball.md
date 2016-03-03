@@ -50,6 +50,7 @@ Game Objects, Components, Prefabs, Physics and Scripting.
 		- 물리 효과가 적용되지 않은 오브젝트의 움직임이나 단순한 타이머, 키 입력을 받을 때 사용된다.
 		- Update는 불규칙한 호출임으로 물리엔진 충돌검사 등이 제대로 안될 수 있음.
 	- FixedUpdate
+		- Physics Step마다 호출된다.
 		- Fixed timestamp에 설정된 값에 따가 일정한 간격으로 호출한다.
 		- 물리 효과가 적용된 (RigidBody 컴포넌트가 추가된) 객체를 조정할 때 사용한다.
 	- LateUpdate
@@ -91,11 +92,14 @@ Game Objects, Components, Prefabs, Physics and Scripting.
 	- Pick Up을 CMD + D 키로 중복 생성한다. (12개)
 - Prefab으로 만든 객체의 Material 컴포넌트 추가.
 	- Prefab으로 추가한 모든 객체의 정보가 동시에 변경된다.
-- Local/Global????
+- Transform Gizmo Toggles
+	- Local/Global????
 	- 설정은 무엇인지 좀 더 찾아보기.
 - Prefab 이란????
 	- Prefab에 대한 정보 좀더 찾아보기.
-	- ....
+	- Asset의 한 종류
+	- 재사용 가능한 GameObject
+	- Prefab으로 만들어진 GameObject는 Prefab을 변경하면 변경된 값들이 GameObject에도 적용됨.
 
 #### Collecting the Pick Up Objects
 - 충돌 탐지.
@@ -121,16 +125,33 @@ Game Objects, Components, Prefabs, Physics and Scripting.
     }
 	```
 - Collider 종류
-	- Dynamic Collider
-		- 움직이는 객체들.
 	- Static Collider
 		- Scene에서 움직이지 않는 부분들.
 		- 충돌체(Collider)는 있으나 리지드바디(Rigidbody)가 없는 게임오브젝트(GameObject).
+	- Dynamic Collider
+		- 움직이는 객체들을 위한 collision detection에 사용된다. (캐릭터, 무기 등)
+		- Collider에 rigidbody를 붙여서 설정한다.
+    - Kinematic Colliders
+    	- Moving platforms, elevator 등 물리 객체가 아닌 코드를 사용하여 움직이는 것들에 사용된다.
+    	- Kinematic 속성을 가진 rigidbody를 사용한다.
 	- Box Collider 사용은 Static?
 	- Rigidbody 사용하면 Dynamic?
-	- Rigidbody 추가하면 Gravity에 주의
-		- Use Gravity ?
-		- Is Kinematic ?
+	- Rigidbody 속성들
+		- Mass : 질량.
+		- Drag : 저항력. 높을 수록 속도가 빨리 줄어 듭니다.
+		- Angular Drag : 회전 저항력. 회전할때 빨리 멈춥니다.
+		- Use Gravity : 중력을 적용할지 여부
+		- Is Kinematic : 물리효과를 적용하지 않을지 여부입니다. 체크되있으면 물리효과가 적용되지 않습니다.
+		- Interpolate : 렌더링 프레임을 부드럽게 보기게 하기위한 보간기능입니다.
+			- Interpolate : 이전 프레임의 위치기반으로 보간합니다.
+			- Extrapolate : 다음프레임 위치를 예상해서 보간합니다.
+		- Collision Detection : 충돌 감지 방법입니다.
+			- Discrete : 이산 감지 방식. 일반적인 방법입니다.
+			- Continous : 'Continous Dynamics'로 설정된 리지드바디를 연속으로 감지합니다.(나머지는 이산 감지)
+			- Continous Dynamics : 'Continous'로 설정된 리지드바디를 연속으로 감지합니다
+		- Constraints : 특정축에 물리반응을 막는 속성입니다.
+			- Freeze Position : 이동을 막습니다.
+			- Freeze Rotation : 회전을 막습니다.
 - Rigidbody
 	- 사용자의 GameObjects가 물리엔진의 제어 내에서 동작할 수 있게 함. 
 	- 이것은 실감나는 충돌, 여러 종류의 조인트들, 그리고 여타의 아주 멋진 동작을 가능하게 함. 
@@ -152,6 +173,6 @@ Game Objects, Components, Prefabs, Physics and Scripting.
     - Unity5 (PhyX3.3)
 	    - Dynamic collider와 static collider의 이동을 처리하기 위해 같은 data structure를 사용함.
 	    - 성능적으로 좋아졌지만 적은 메모리를 사용했던 Static collider의 이점이 사라짐.
-	    
+
 #### Displaying the Score and Text
 #### Building the Game
