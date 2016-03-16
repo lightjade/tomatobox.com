@@ -103,16 +103,8 @@ Game Objects, Components, Prefabs, Physics and Scripting.
 
 #### Collecting the Pick Up Objects
 - 충돌 탐지.
-- Sphere Collider
-	- Message
-        | Message | 설명 |
-        |--------|--------|
-        |OnCollisionEnter | OnCollisionEnter is called when this collider/rigidbody has begun touching another rigidbody/collider.|
-        |OnCollisionExit | OnCollisionExit is called when this collider/rigidbody has stopped touching another rigidbody/collider.|
-        |OnCollisionStay | OnCollisionStay is called once per frame for every collider/rigidbody that is touching rigidbody/collider.|
-        |OnTriggerEnter | OnTriggerEnter is called when the Collider other enters the trigger.|
-        |OnTriggerExit | OnTriggerExit is called when the Collider other has stopped touching the trigger.|
-        |OnTriggerStay | OnTriggerStay is called almost all the frames for every Collider other that is touching the trigger.|
+- Sphere Collider Message
+<table><tr><td>Message</td><td>설명</td></tr><tr><td>OnCollisionEnter</td><td>OnCollisionEnter is called when this collider/rigidbody has begun touching another rigidbody/collider.</td></tr><tr><td>OnCollisionExit</td><td>OnCollisionExit is called when this collider/rigidbody has stopped touching another rigidbody/collider</td></tr><tr><td>OnCollisionStay</td><td>OnCollisionStay is called once per frame for every collider/rigidbody that is touching rigidbody/collider</td></tr><tr><td>OnTriggerEnter</td><td>OnTriggerEnter is called when the Collider other enters the trigger.</td></tr><tr><td>OnTriggerExit</td><td>OnTriggerExit is called when the Collider other has stopped touching the trigger.</td></tr><tr><td>OnTriggerStay</td><td>OnTriggerStay is called almost all the frames for every Collider other that is touching the trigger.</td></tr></table>
 
 - Script
 	```
