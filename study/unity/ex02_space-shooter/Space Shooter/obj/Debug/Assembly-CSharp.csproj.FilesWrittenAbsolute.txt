@@ -1,0 +1,14 @@
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/UnityEngine.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/UnityEditor.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Coupang/Personal/tomatobox.com/study/unity/ex02_space-shooter/Space Shooter/Temp/bin/Debug/Mono.Cecil.Mdb.dll

@@ -80,10 +80,18 @@
 - Background에 Texture를 추가
 	- Texture의 preview 화면에서 이미지의 크기를 알 수 있다. 
 - Quad 크기 조정
-	- z값은 변하지 않는다. 
-
+	- z값은 변하지 않는다.
+	- Texture 크기에 비율대로 transform을 변경해야한다.
+	- 배경을 위한 조명이 필요하다. 
+- Texture
+	- Diffuse : 텍스쳐를 무광채색으로 다룬다. 
+	- Specular : 반사세이더, 유광 채색이나 빛나는 플라스틱처럼 다룬다. 
 
 #### 5. Moving the player
+- Input.GetAxis ("Horizontal")
+- Input.GetAxis ("Vertical");
+- Vector3
+- Player 가 화면 밖으로 나가면 안된다. 
 #### 6. Creating shots
 #### 7. Shooting Shots
 
