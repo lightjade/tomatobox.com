@@ -170,3 +170,38 @@ void Update()
     	- [MonoBehaviour 오버라이딩 가능 함수 정리](http://kimseunghyun76.tistory.com/194)
 
 #### 3. Camera setup
+
+
+#### 4. Creating Enemy #1
+- Nav Mesh Agent?
+	- 간단한 AI를 위해 사용하는 Nav Mesh 시스템
+	- 베이킹이라는 프로세스를 실행하여 레벨의 어느 부분을 탐색할 수 있는지 지정하는 것이다.
+	- Nav Mesh Agent가 자동으로 타겟을 골라 추적하면서 한편으로 장애물 등을 피해 돌아다닌다.
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
